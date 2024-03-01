@@ -1,0 +1,146 @@
+#tit{
+    background-color: tomato;
+    min-height:90px ;
+    padding-top: 15px;
+    color: khaki;
+    
+}
+.prin{
+  padding-top: 30px;
+  padding-bottom:40px ;
+}
+body{
+    background-color:khaki !important;
+    background-image: url(img/pizz1.png);
+    background-position: right;
+    background-position-y: 10px;
+    background-repeat: no-repeat;
+  
+}
+#tprin h3{
+    font-size: 90px;
+}
+
+.th3{
+    font-size: 300%;
+    margin-left: 26%;
+}
+.tx{
+    
+    max-width: 62%;
+    font-size: 22px;
+    padding: 2%;
+    margin-left: 3%;
+}
+
+
+/*--------------------------------------------------------------
+# Desktop Navigation
+--------------------------------------------------------------*/
+@media (min-width: 1280px) {
+    .navbar {
+      padding: 0;
+    }
+  
+    .navbar ul {
+      margin-left: 30%;
+      padding: 0;
+      display: flex;
+      list-style: none;
+      align-items: center;
+      background-color: tomato;
+    }
+  
+    .navbar li {
+      position: relative;
+      margin: 10px;
+      text-align: center;
+      
+      
+    }
+  
+    .navbar>ul>li {
+      white-space: nowrap;
+      padding: 10px 28px 10px 28px;
+    }
+  
+    .navbar a,
+    .navbar a:focus {
+      /* display: flex ; */
+      /* align-items: center; */
+      /* justify-content: space-between; */
+      /* padding: 0 3px; */
+      /* font-family: var(--font-secondary); */
+      text-decoration: none;
+      font-size: 16px !important;
+      font-weight: 600;
+      color: khaki;
+      white-space: nowrap;
+      transition: 0.3s;
+      position: relative;
+      
+    }
+    
+    .navbar a:hover,
+    .navbar li:hover>a {
+      color: #000;
+    } 
+    .navbar a:active{
+      color: aliceblue !important;
+    }
+    
+}
+
+  .bt{
+    margin-left: 30%;
+    background-color: tomato !important;
+    color: khaki !important;
+  }
+  .tit{
+    padding-left: 7%; 
+  }
+  
+  .xt1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif !important;
+  }
+  .carru{
+    margin: 4px 4px 15px 4px;
+    width: 600px;
+    
+  }
+  span:hover{
+    color: tomato;
+    transition: ease 0.3s;
+  }
+  .nem{
+    width: 70%;
+    
+  }
+  .flot{
+    position: absolute;
+    left: 60%;
+    top: 930px;
+    background-color: rgb(230, 218, 119);
+  }
+  .flot1{
+    position: absolute;
+    left: 52%; 
+    top: 1180px;
+    background-color: rgb(230, 218, 119);
+  }
+  .flo1{
+    background-color: rgb(230, 218, 119);
+  }
+  .imfond{
+    background-image: url(img/pizz2.png);
+    background-position-x: right;
+    background-position-y: 600px;
+    background-repeat: no-repeat;
+  }
+  footer{
+    padding-top:50px ;
+    padding-bottom: 40px;
+    background-color: tomato;
+    max-width: 100%;
+    overflow: hidden;
+  }
