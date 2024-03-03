@@ -1,23 +1,25 @@
-#tit{
+/* Vista de ordenador */
+@media (min-width: 800px) {
+  .body{
+    background-color:khaki !important;
+    background-image: url(img/pizz1.png);
+    z-index: 9999;
+    background-position: right;
+    background-position-y: 10px;
+    background-repeat: no-repeat;
+  }
+  #tit{
     background-color: tomato;
     min-height:90px ;
     padding-top: 15px;
     color: khaki;
-    
-}
-.prin{
-  padding-top: 30px;
-  padding-bottom:40px ;
-}
-body{
-    background-color:khaki !important;
-    background-image: url(img/pizz1.png);
-    background-position: right;
-    background-position-y: 10px;
-    background-repeat: no-repeat;
-  
-}
-#tprin h3{
+    width: 100%;
+  }
+  .prin{
+    padding-top: 30px;
+    padding-bottom:40px ;
+  }
+  #tprin h3{
     font-size: 90px;
 }
 
@@ -31,6 +33,11 @@ body{
     font-size: 22px;
     padding: 2%;
     margin-left: 3%;
+}
+.num{
+  padding-top: 16px;
+  text-align: center;
+  cursor: pointer;
 }
 
 
@@ -108,9 +115,17 @@ body{
     width: 600px;
     
   }
+  /* span{
+    animation-name: anim;
+    animation-duration: .2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 3;
+  } */
   span:hover{
     color: tomato;
     transition: ease 0.3s;
+    cursor: pointer;
+    
   }
   .nem{
     width: 70%;
@@ -132,10 +147,11 @@ body{
     background-color: rgb(230, 218, 119);
   }
   .imfond{
-    background-image: url(img/pizz2.png);
+    background-image: url(img/pizz3.png);
     background-position-x: right;
     background-position-y: 600px;
     background-repeat: no-repeat;
+    background-size: 700px;
   }
   footer{
     padding-top:50px ;
@@ -143,4 +159,112 @@ body{
     background-color: tomato;
     max-width: 100%;
     overflow: hidden;
+    color: black !important;
   }
+  .tira{
+    text-decoration: none;
+    color: black;
+  }
+  .t1{
+    background-color: tomato;
+    max-width: 100px;
+    height: 40px;
+    position: relative;
+    left: 90%;
+    top: -30px;
+  }
+  .t2{
+    position: relative;
+    top: 6px;
+    padding-left: 17px;
+    padding-top: -10px;
+    text-decoration: none;
+    color: khaki;
+  }
+ .tx1{
+    text-align: center;
+  }
+  
+} 
+
+/* Vista de Dispositivo movil */
+@media(max-width: 800px){
+  .body{
+    background-color:khaki !important;
+    background-image: url(img/pizz1.png);
+    background-size: 110%;
+    background-position: right;
+    background-position-y: 300px;
+    background-repeat: no-repeat;
+    margin-left: 10%;
+    margin-right: 4%;
+  }
+  #tit{
+    background-color: tomato;
+    min-height:90px ;
+    padding-top: 15px;
+    color: khaki;
+    width: 100%;
+  }
+  .prin{
+    padding-top: 30px;
+    padding-bottom:40px ;
+  }
+
+  .navbar{
+    display: flex;
+  }
+}
+
+.car{
+  margin: 2% 2% 2% 2%;
+}
+@keyframes anim{
+  0%{
+    transform: translateX(0);
+  }
+  25%{
+    transform: translateX(50px);
+  }
+  50%{
+    transform: translateX(0);
+  }
+  75%{
+    transform: translateX(-50px);
+  }
+  100%{
+    transform: translateX(0);
+  }
+}
+.zoon{
+  transition-duration: 0.3s;
+  
+}
+.zoon:hover{
+  scale: 1.1;
+}
+.bod{
+  background-color:khaki !important;
+  padding-left: 20%;
+  padding-right: 20%;
+  padding-top: 20%;
+}
+.alerta{
+  
+}
+.alerta {
+  position: relative;
+  top: 10px;
+  background-color: tomato;
+  padding: 1.5rem;
+  text-align: center;
+  color: #FFF;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.alerta.error {
+  background-color: rgb(162, 0, 0) !important;
+}
+.alerta.exito {
+  background-color: rgb(7, 145, 7) !important;
+}
