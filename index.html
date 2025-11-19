@@ -7,6 +7,18 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="css/bootstrap.css">
     <title>Pizzeria</title>
+<script src="./js/jquery-3.7.1.js"></script>
+<script>
+    $(document).ready(function() {
+        // $("#pri").fadeIn(3000)
+        $("#pri").hide()
+        $("#pri").scroll().slideDown(3000)
+        $("#finn").scroll().slideDown(3000)
+        // $("#pri").insertAfter("#tit")
+        // $("#pri").slideDown(3000)
+    } )
+</script>
+
 </head>
 <body class="body">
     
@@ -34,7 +46,7 @@
     </div>
     <div>
         <div>
-            <p class="tx1 tx shadow rounded zoon"> <b> ¡Bienvenido a nuestra pizzería, donde cada bocado te transportará a Italia!</b> <br><br>
+            <p class="tx1 tx shadow rounded zoon" id="pri" > <b> ¡Bienvenido a nuestra pizzería, donde cada bocado te transportará a Italia!</b> <br><br>
                 Nuestras pizzas están hechas con los ingredientes más frescos y de la mejor calidad, combinados con deliciosas salsas caseras 
                 y horneadas a la perfección en nuestro horno de leña. Ya sea que prefieras una clásica Margarita, una sabrosa Pepperoni o 
                 una creativa pizza gourmet, estamos seguros de que encontrarás la combinación perfecta para satisfacer tus antojos. 
@@ -81,7 +93,7 @@
                     3. Helado de vainilla con salsa de caramelo.
                 </div>
                 
-                <div class="tx" >
+                <div class="tx" id="finn" >
                     ¡Esperamos que este menú te haya abierto el apetito! ¡Estamos ansiosos por recibirte en nuestra pizzería para que 
                     disfrutes de nuestras deliciosas creaciones!</p>
                     <br>
